@@ -1,0 +1,86 @@
+@import '../helper//variable.scss';
+.nav-main{
+   
+    background: $color-white-base-0;
+    box-shadow: 4px 4px 10px rgba(133, 178, 220, 0.25);
+    height: 100vh;
+    position: fixed;
+    z-index: 9999;
+    .nav{
+        height: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        background: linear-gradient(359.43deg, $color-orange-base-0,2.1%, $color-orange-base-1 98.52%);
+        box-shadow: 4px 4px 15px rgba(122, 176, 225, 0.25);
+        .nav-item{
+            padding: 0.5rem;
+            .nav-link{
+                color: $color-white-base-0;
+                padding: 1rem 1.25rem;
+                &:hover, &.active{
+                    border-radius: 0.9rem;
+                    background-color: rgba($color: $bg-orange-0, $alpha: 0.5);
+                    color: $color-white-base-0;
+                }
+                &.brand{
+                    &:hover, &.active{
+                        border-radius:none;
+                        background-color: initial;
+                        color: $color-white-base-0;
+                    }
+                }
+                &.barsOutLine{
+                    padding: 0.2rem 1.25rem;
+                    &:hover{
+                        border-radius:none;
+                        background-color: initial;
+                        color: $color-white-base-0;
+                        cursor: pointer;
+                    }
+                }
+                .nav-icon{
+                    font-size: $fs-1_5;
+                }
+            }
+        }
+     
+    }
+    .nav-persistent-visible{
+        // overflow-y: scroll;
+        // overflow-x: hidden;
+        // height: 100vh;
+        height: 100%;
+        width: 196px;
+        .nav{
+            min-height: 105vh;
+            padding-top: 130px;
+            background: $color-white-base-0;
+            height: 100%;
+            .nav-item{
+                .nav-link{
+                    color: $color-black-0;
+                    opacity: 0.7;
+                    .nav-icon{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+        // &::-webkit-scrollbar{
+        //     width: 12px;
+        //     background: $color-white-base-0;
+        // }
+     
+       
+        // &::-webkit-scrollbar-thumb{
+        //     background-color: red;
+        //     height: 10%;
+           
+        // }
+      
+       
+      
+    }
+  
+    
+}

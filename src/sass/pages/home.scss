@@ -1,0 +1,150 @@
+@import '../helper/variable.scss';
+#home{
+    flex-basis: 100%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-left: 114px !important;
+    .col-container{
+        text-align: center;
+        margin: 0 auto;
+        p{
+            margin-bottom: 0;
+        }
+      
+    }
+    .col-container1,.col-container2,.col-container3,.col-container4{
+        width: 195px;
+        height: 82px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 12px;
+        cursor: pointer;
+        p{
+            color: $color-white-base-0;
+         &:nth-child(1){
+             font-size: 1.2rem;
+             font-weight: $fw-700;
+         }
+         &:nth-child(2){
+             font-size: 1rem;
+         }
+        }
+    }
+    .col-container1, .col-container3{
+        background: linear-gradient(270deg, #FF5400 0%, #F17F21 80.56%);
+    }
+    .col-container2, .col-container4{
+        background: linear-gradient(98.91deg, #56CCF2 1.13%, #2F80ED 100%);
+    }
+    //multi carousel
+    .carousel{
+        
+        .carousel_title{
+            color: $color-orange-2;
+            font-size: 1.125rem;
+        }
+        .slick-slide{
+            margin-right: 3rem;
+        }
+        .carousel_item{
+            background: $color-white-base-0;
+            padding: 1rem;
+            box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
+            border-radius: 8px;
+            margin-right: 1rem;
+            margin-bottom: 3rem;
+            
+            .intro-subject{
+                position: relative;
+                height: 100px;
+                width: 100px;
+                cursor: pointer;
+               
+                img{
+                    border-radius: 8px;
+                }
+                .overplay{
+                    height: 50px;
+                    width: 50px;
+                    text-align: center;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    color: $color-white-base-0;
+                    background-color: $color-black-0;
+                    border-radius: 50%;
+                    opacity: 0.8;
+                    i{
+                        font-size: 1.5rem;
+                        line-height: 50px;
+                    }
+                }
+            }
+           .subject{
+               cursor: pointer;
+           }
+            .subject, .classId{
+                font-size: 1rem;
+                color: $color-black-0;
+                margin-bottom: 0;
+            }
+            .category, .teacher{
+                font-size: 0.75rem;
+                color: $color-black-0;
+                font-weight: $fw-400;
+            }
+            .classId{
+                color: $color-orange-2;
+            }
+          
+        }
+
+        // set position for the slick-next slick-prev
+        .slick-next::before, .slick-prev::before{
+              content: unset;
+        }
+        .slick-next, .slick-prev{
+            &:hover{
+                i{
+                    color: $color-orange-3;
+                }
+               
+            }
+        }
+        .slick-list{
+            height: 320px;
+            .slick-track{
+                height: 320px;
+            }
+        }
+       
+    }
+
+    //recent activity
+    .recent-activity{
+        .activity-container{
+            background-color: $color-orange-4;
+            box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
+            border-radius: $br-16;
+            .activity_header{
+                color: $color-black-0;
+                font-size: 1rem;
+                padding: 8px 0;
+                padding-left: 1.5rem;
+                font-weight: $fw-700;
+            }
+            .activity_body{
+                background-color: $color-white-base-0;
+                border-radius: $br-10;
+                margin: 0;
+                padding: 12px;
+            }
+        }
+    }
+   
+
+
+}
