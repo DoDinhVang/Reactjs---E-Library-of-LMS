@@ -6,7 +6,7 @@ import CarouselMulti from './components/CarouselMulti'
 const { Option } = Select
 export default function Home() {
   return (
-    <div id='home' className='px-5 py-3' >
+    <div id='home' className='main-content px-5' >
       <h1 className='title_base mb-5'>Trang chủ</h1>
       <div className='row m-0'>
         <div className='col position-relative'>
@@ -55,7 +55,7 @@ export default function Home() {
       <CarouselMulti />
       <div className='row recent-activity'>
         <div className='col-3'>
-          <div className='activity-container p-2'>
+          <div className='activity-container'>
             <h3 className='activity_header'>Thống kê truy cập</h3>
             <div className='row activity_body'>
               <div className='col-9 text-left'>

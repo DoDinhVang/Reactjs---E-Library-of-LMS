@@ -1,0 +1,105 @@
+@import '../helper/variable.scss';
+#profile{
+    .checkBox{
+        border-radius: 32px;
+        background: $bg-white-0;
+        width: 340px;
+        height: 40px;
+        position: relative;
+        p{
+            color: $color-black-0;
+            opacity: 0.5;
+            font-size: 1rem;
+            cursor: pointer;
+            z-index: 99;
+            transition: all .5s;
+        }
+        .slider{
+            position: absolute;
+            height: 100%;
+            width: 50%;
+            background-color: $color-black-0;
+            border-radius: 32px;
+            transform: translateX(-82px);
+            transition: all .5s;
+            &.slider-left{
+                transform: translateX(-82px);
+            }
+            &.slider-right{
+                transform: translateX(82px);
+            }
+        }
+        .is-selected{
+            color: $color-white-base-0;
+        }
+        
+    }
+    .profile-content{
+        background-color: $bg-white;
+        box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
+        border-radius: $br-16 $br-16 0px 0px;
+        
+        .title{
+            color: $color-white-base-0;
+            font-size: 1.25rem;
+            background-color: $bg-orange-2;
+            border-radius: $br-16 $br-16 0px 0px;
+
+        }
+        .avatar{
+            height: 156px;
+            width: 156px;
+            background-color: $bg-gray-0;
+            border-radius: 50%;
+            text-align: center;
+            position: relative;
+           .short-name{
+            line-height: 156px;
+            color: $color-white-base-0;
+            font-size: 89px;
+            margin-bottom: 0;
+           }
+           .icon-camera{
+               cursor: pointer;
+               height: 56px;
+               width: 56px;
+               border-radius: 50%;
+               border: 3px solid $color-white-base-0;
+               background-color: $color-orange-2;
+               text-align: center;
+               line-height: 42px;
+               position: absolute;
+               bottom: 0;
+               left: 50%;
+               transform: translate(-50%, 50%);
+              
+           }
+        }
+        .text-password{
+            color: $color-black-0;
+            font-weight: 700;
+            font-size: 1rem;
+            span{
+                color: $color-orange-5;
+            }
+        }
+        .icon-note{
+            height: 20px;
+            width: 20px;
+            line-height: 15px;
+            border-radius: 50%;
+            border: 2px solid $color-orange-3;
+            color: $color-orange-3;
+            text-align: center;
+           
+        }
+        .text-note{
+            color: $color-black-0;
+            font-size: 14px;
+            font-style: italic;
+            font-weight: $fw-400;
+            line-height: 18px;
+        
+        }
+    }
+}

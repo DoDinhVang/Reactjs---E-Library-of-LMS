@@ -5,3 +5,13 @@
     line-height: $lh;
     font-weight: $fw;
 }
+@mixin styleButton($bg,$color,$w,$h,$border) {
+    background-color: $bg;
+    color: $color;
+    width: $w;
+    height: $h;
+    border-radius: $border;
+    text-align: center;
+    line-height: $h;
+    border: none;
+}

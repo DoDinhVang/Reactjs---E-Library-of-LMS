@@ -43,14 +43,14 @@ export default function CarouselMulti() {
         <div className='carousel mt-5 mb-5'>
             <h2 className='carousel_title mb-4'>Tài liệu môn học đã xem gần đây</h2>
             <Slider {...settings}>
-                <div className='d-flex align-items-center carousel_item'>
-                    <div className='intro-subject me-3'>
+            <div className='d-flex align-items-center carousel_item'>
+                    <div className='img-subject me-3'>
                         <img src='https://picsum.photos/100/100' alt='img' className=' h-full w-full'></img>
                         <div className='overplay'>
                             <i className="fa fa-play"></i>
                         </div>
                     </div>
-                    <div>
+                    <div className='intro-subject'>
                         <div>
                             <h5 className='subject'>Phát triển website </h5>
                             <p className='category'>Web Design</p>
@@ -62,13 +62,13 @@ export default function CarouselMulti() {
                     </div>
                 </div>
                 <div className='d-flex align-items-center carousel_item'>
-                    <div className='intro-subject me-3'>
+                    <div className='img-subject me-3'>
                         <img src='https://picsum.photos/100/100' alt='img' className=' h-full w-full'></img>
                         <div className='overplay'>
                             <i className="fa fa-play"></i>
                         </div>
                     </div>
-                    <div>
+                    <div className='intro-subject'>
                         <div>
                             <h5 className='subject'>Phát triển website </h5>
                             <p className='category'>Web Design</p>
@@ -80,13 +80,13 @@ export default function CarouselMulti() {
                     </div>
                 </div>
                 <div className='d-flex align-items-center carousel_item'>
-                    <div className='intro-subject me-3'>
+                    <div className='img-subject me-3'>
                         <img src='https://picsum.photos/100/100' alt='img' className=' h-full w-full'></img>
                         <div className='overplay'>
                             <i className="fa fa-play"></i>
                         </div>
                     </div>
-                    <div>
+                    <div className='intro-subject'>
                         <div>
                             <h5 className='subject'>Phát triển website </h5>
                             <p className='category'>Web Design</p>
@@ -98,13 +98,13 @@ export default function CarouselMulti() {
                     </div>
                 </div>
                 <div className='d-flex align-items-center carousel_item'>
-                    <div className='intro-subject me-3'>
+                    <div className='img-subject me-3'>
                         <img src='https://picsum.photos/100/100' alt='img' className=' h-full w-full'></img>
                         <div className='overplay'>
                             <i className="fa fa-play"></i>
                         </div>
                     </div>
-                    <div>
+                    <div className='intro-subject'>
                         <div>
                             <h5 className='subject'>Phát triển website </h5>
                             <p className='category'>Web Design</p>
@@ -116,13 +116,13 @@ export default function CarouselMulti() {
                     </div>
                 </div>
                 <div className='d-flex align-items-center carousel_item'>
-                    <div className='intro-subject me-3'>
+                    <div className='img-subject me-3'>
                         <img src='https://picsum.photos/100/100' alt='img' className=' h-full w-full'></img>
                         <div className='overplay'>
                             <i className="fa fa-play"></i>
                         </div>
                     </div>
-                    <div>
+                    <div className='intro-subject'>
                         <div>
                             <h5 className='subject'>Phát triển website </h5>
                             <p className='category'>Web Design</p>
@@ -134,13 +134,13 @@ export default function CarouselMulti() {
                     </div>
                 </div>
                 <div className='d-flex align-items-center carousel_item'>
-                    <div className='intro-subject me-3'>
+                    <div className='img-subject me-3'>
                         <img src='https://picsum.photos/100/100' alt='img' className=' h-full w-full'></img>
                         <div className='overplay'>
                             <i className="fa fa-play"></i>
                         </div>
                     </div>
-                    <div>
+                    <div className='intro-subject'>
                         <div>
                             <h5 className='subject'>Phát triển website </h5>
                             <p className='category'>Web Design</p>
@@ -152,13 +152,13 @@ export default function CarouselMulti() {
                     </div>
                 </div>
                 <div className='d-flex align-items-center carousel_item'>
-                    <div className='intro-subject me-3'>
+                    <div className='img-subject me-3'>
                         <img src='https://picsum.photos/100/100' alt='img' className=' h-full w-full'></img>
                         <div className='overplay'>
                             <i className="fa fa-play"></i>
                         </div>
                     </div>
-                    <div>
+                    <div className='intro-subject'>
                         <div>
                             <h5 className='subject'>Phát triển website </h5>
                             <p className='category'>Web Design</p>
@@ -170,13 +170,85 @@ export default function CarouselMulti() {
                     </div>
                 </div>
                 <div className='d-flex align-items-center carousel_item'>
-                    <div className='intro-subject me-3'>
+                    <div className='img-subject me-3'>
                         <img src='https://picsum.photos/100/100' alt='img' className=' h-full w-full'></img>
                         <div className='overplay'>
                             <i className="fa fa-play"></i>
                         </div>
                     </div>
-                    <div>
+                    <div className='intro-subject'>
+                        <div>
+                            <h5 className='subject'>Phát triển website </h5>
+                            <p className='category'>Web Design</p>
+                        </div>
+                        <div>
+                            <h5 className='classId'>W2B23 </h5>
+                            <p className='teacher'>Giảng viên Hoa Hoa  </p>
+                        </div>
+                    </div>
+                </div>
+                <div className='d-flex align-items-center carousel_item'>
+                    <div className='img-subject me-3'>
+                        <img src='https://picsum.photos/100/100' alt='img' className=' h-full w-full'></img>
+                        <div className='overplay'>
+                            <i className="fa fa-play"></i>
+                        </div>
+                    </div>
+                    <div className='intro-subject'>
+                        <div>
+                            <h5 className='subject'>Phát triển website </h5>
+                            <p className='category'>Web Design</p>
+                        </div>
+                        <div>
+                            <h5 className='classId'>W2B23 </h5>
+                            <p className='teacher'>Giảng viên Hoa Hoa  </p>
+                        </div>
+                    </div>
+                </div>
+                <div className='d-flex align-items-center carousel_item'>
+                    <div className='img-subject me-3'>
+                        <img src='https://picsum.photos/100/100' alt='img' className=' h-full w-full'></img>
+                        <div className='overplay'>
+                            <i className="fa fa-play"></i>
+                        </div>
+                    </div>
+                    <div className='intro-subject'>
+                        <div>
+                            <h5 className='subject'>Phát triển website </h5>
+                            <p className='category'>Web Design</p>
+                        </div>
+                        <div>
+                            <h5 className='classId'>W2B23 </h5>
+                            <p className='teacher'>Giảng viên Hoa Hoa  </p>
+                        </div>
+                    </div>
+                </div>
+                <div className='d-flex align-items-center carousel_item'>
+                    <div className='img-subject me-3'>
+                        <img src='https://picsum.photos/100/100' alt='img' className=' h-full w-full'></img>
+                        <div className='overplay'>
+                            <i className="fa fa-play"></i>
+                        </div>
+                    </div>
+                    <div className='intro-subject'>
+                        <div>
+                            <h5 className='subject'>Phát triển website </h5>
+                            <p className='category'>Web Design</p>
+                        </div>
+                        <div>
+                            <h5 className='classId'>W2B23 </h5>
+                            <p className='teacher'>Giảng viên Hoa Hoa  </p>
+                        </div>
+                    </div>
+                </div>
+                <div className='d-flex align-items-center carousel_item'>
+                    <div className='img-subject me-3'>
+                        <img src='https://picsum.photos/100/100' alt='img' className=' h-full w-full'></img>
+                        <div className='overplay'>
+                            <i className="fa fa-play"></i>
+                        </div>
+                    </div>
+                    <div className='intro-subject'>
                         <div>
                             <h5 className='subject'>Phát triển website </h5>
                             <p className='category'>Web Design</p>

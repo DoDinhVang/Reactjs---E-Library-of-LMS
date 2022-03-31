@@ -10,6 +10,7 @@
         height: 100%;
         flex-direction: column;
         flex-wrap: nowrap;
+        align-items: center;
         background: linear-gradient(359.43deg, $color-orange-base-0,2.1%, $color-orange-base-1 98.52%);
         box-shadow: 4px 4px 15px rgba(122, 176, 225, 0.25);
         .nav-item{
@@ -24,9 +25,9 @@
                 }
                 &.brand{
                     &:hover, &.active{
-                        border-radius:none;
-                        background-color: initial;
-                        color: $color-white-base-0;
+                        border-radius: unset;
+                        background-color: unset;
+                        color: unset;
                     }
                 }
                 &.barsOutLine{
@@ -53,13 +54,24 @@
         width: 196px;
         .nav{
             min-height: 105vh;
-            padding-top: 130px;
+            justify-content: center;
             background: $color-white-base-0;
             height: 100%;
+            align-items: unset;
             .nav-item{
+                padding: 0;
                 .nav-link{
                     color: $color-black-0;
                     opacity: 0.7;
+                    font-weight: $fw-500;
+                    &:hover,&.active{
+                        border-radius: unset;
+                        background-color: unset;
+                        color: unset;
+                    }
+                    &.active{
+                        color: $color-orange-3;
+                    }
                     .nav-icon{
                         font-size: 1rem;
                     }
@@ -79,8 +91,19 @@
         // }
       
        
-      
+        .submenu{
+            padding-left: 45px;
+            .nav-item{
+                padding: 0;
+                .nav-link{
+                    padding: 0.5rem;
+                    font-weight: normal;
+                    
+                }
+            }
+        }
     }
+    
   
     
 }

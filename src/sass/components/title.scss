@@ -1,6 +1,6 @@
 @import '../helper/variable.scss';
 @import '../helper/mixin.scss';
 .title_base{
-    @include title($color-black-0,$fs-3,$lh-56, $fw-normal);
+    @include title($color-black-0,$fs-3 - 0.5,$lh-56, $fw-normal);
    
 }

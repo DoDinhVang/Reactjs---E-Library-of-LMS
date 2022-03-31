@@ -1,10 +1,5 @@
 @import '../helper/variable.scss';
 #home{
-    flex-basis: 100%;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    padding-left: 114px !important;
     .col-container{
         text-align: center;
         margin: 0 auto;
@@ -38,7 +33,7 @@
     .col-container2, .col-container4{
         background: linear-gradient(98.91deg, #56CCF2 1.13%, #2F80ED 100%);
     }
-    //multi carousel
+    // style carousel
     .carousel{
         
         .carousel_title{
@@ -55,8 +50,9 @@
             border-radius: 8px;
             margin-right: 1rem;
             margin-bottom: 3rem;
+            width: 280px !important;
             
-            .intro-subject{
+            .img-subject{
                 position: relative;
                 height: 100px;
                 width: 100px;
@@ -83,22 +79,26 @@
                     }
                 }
             }
-           .subject{
-               cursor: pointer;
-           }
-            .subject, .classId{
-                font-size: 1rem;
-                color: $color-black-0;
-                margin-bottom: 0;
+            .intro-subject{
+                flex-basis: 100%;
+                .subject{
+                    cursor: pointer;
+                }
+                 .subject, .classId{
+                     font-size: 1rem;
+                     color: $color-black-0;
+                     margin-bottom: 0;
+                 }
+                 .category,.date .teacher{
+                     font-size: 0.75rem;
+                     color: $color-black-0;
+                     font-weight: $fw-400;
+                 }
+                 .classId{
+                     color: $color-orange-2;
+                 }
             }
-            .category, .teacher{
-                font-size: 0.75rem;
-                color: $color-black-0;
-                font-weight: $fw-400;
-            }
-            .classId{
-                color: $color-orange-2;
-            }
+          
           
         }
 
@@ -117,11 +117,26 @@
         .slick-list{
             height: 320px;
             .slick-track{
-                height: 320px;
+                height: 100%;
+            }
+        }
+        .slick-slide{
+            width: 280px !important;
+        }
+        &.carousel-simple{
+            .slick-list{
+                height: 170px;
+                .slick-track{
+                    height: 100%;
+                }
             }
         }
        
     }
+
+
+
+    
 
     //recent activity
     .recent-activity{
@@ -129,6 +144,8 @@
             background-color: $color-orange-4;
             box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
             border-radius: $br-16;
+            width: 100%;
+            padding: 8px;
             .activity_header{
                 color: $color-black-0;
                 font-size: 1rem;

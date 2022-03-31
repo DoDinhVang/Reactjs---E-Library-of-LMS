@@ -1,0 +1,10 @@
+@import '../helper/variable.scss';
+@import '../helper/mixin.scss';
+
+.button-orange{
+    @include styleButton($bg-orange-3,$color-white-base-0,120px,40px,$br-8);
+    
+}
+.button-gray{
+    @include styleButton($bg-white-0,$color-black-0,120px,40px,$br-8);
+}

@@ -33,36 +33,101 @@ export default function CarouselSimple() {
     };
     return (
         <>
-            <div className='carousel'>
+            <div className='carousel carousel-simple'>
                 <h2 className='carousel_title mb-4'>Tệp riêng tư tải lên gần đây</h2>
                 <Slider {...settings}>
-                    <div>
-                        <h3>1</h3>
+                    <div className='d-flex align-items-center carousel_item'>
+                        <div className='img-subject me-3'>
+                            <img src='https://picsum.photos/100/100' alt='img' className=' h-full w-full'></img>
+                            <div className='overplay'>
+                                <i className="fa fa-play"></i>
+                            </div>
+                        </div>
+                        <div className='intro-subject'>
+                            <div>
+                                <h5 className='subject'>Thương mại điện tử là gì.doc</h5>
+                                <p className='date'>12:01 12/12/2022</p>
+                            </div>
+                            <div>
+                                <h5 className='classId'>W2B23 </h5>
+                                <p className='teacher'>Giảng viên Hoa Hoa  </p>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <h3>2</h3>
+                    <div className='d-flex align-items-center carousel_item'>
+                        <div className='img-subject me-3'>
+                            <img src='https://picsum.photos/100/100' alt='img' className=' h-full w-full'></img>
+                            <div className='overplay'>
+                                <i className="fa fa-play"></i>
+                            </div>
+                        </div>
+                        <div className='intro-subject'>
+                            <div>
+                                <h5 className='subject'>Thương mại điện tử là gì.doc</h5>
+                                <p className='date'>12:01 12/12/2022</p>
+                            </div>
+                            <div>
+                                <h5 className='classId'>W2B23 </h5>
+                                <p className='teacher'>Giảng viên Hoa Hoa  </p>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <h3>3</h3>
+                    <div className='d-flex align-items-center carousel_item'>
+                        <div className='img-subject me-3'>
+                            <img src='https://picsum.photos/100/100' alt='img' className=' h-full w-full'></img>
+                            <div className='overplay'>
+                                <i className="fa fa-play"></i>
+                            </div>
+                        </div>
+                        <div className='intro-subject'>
+                            <div>
+                                <h5 className='subject'>Thương mại điện tử là gì.doc</h5>
+                                <p className='date'>12:01 12/12/2022</p>
+                            </div>
+                            <div>
+                                <h5 className='classId'>W2B23 </h5>
+                                <p className='teacher'>Giảng viên Hoa Hoa  </p>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <h3>4</h3>
+                    <div className='d-flex align-items-center carousel_item'>
+                        <div className='img-subject me-3'>
+                            <img src='https://picsum.photos/100/100' alt='img' className=' h-full w-full'></img>
+                            <div className='overplay'>
+                                <i className="fa fa-play"></i>
+                            </div>
+                        </div>
+                        <div className='intro-subject'>
+                            <div>
+                                <h5 className='subject'>Thương mại điện tử là gì.doc</h5>
+                                <p className='date'>12:01 12/12/2022</p>
+                            </div>
+                            <div>
+                                <h5 className='classId'>W2B23 </h5>
+                                <p className='teacher'>Giảng viên Hoa Hoa  </p>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <h3>5</h3>
+                    <div className='d-flex align-items-center carousel_item'>
+                        <div className='img-subject me-3'>
+                            <img src='https://picsum.photos/100/100' alt='img' className=' h-full w-full'></img>
+                            <div className='overplay'>
+                                <i className="fa fa-play"></i>
+                            </div>
+                        </div>
+                        <div className='intro-subject'>
+                            <div>
+                                <h5 className='subject'>Thương mại điện tử là gì.doc</h5>
+                                <p className='date'>12:01 12/12/2022</p>
+                            </div>
+                            <div>
+                                <h5 className='classId'>W2B23 </h5>
+                                <p className='teacher'>Giảng viên Hoa Hoa  </p>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <h3>6</h3>
-                    </div>
-                    <div>
-                        <h3>7</h3>
-                    </div>
-                    <div>
-                        <h3>8</h3>
-                    </div>
-                    <div>
-                        <h3>9</h3>
-                    </div>
+
+                  
                 </Slider>
             </div>
         </>

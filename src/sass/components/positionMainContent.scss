@@ -1,0 +1,10 @@
+@import '../helper/variable.scss';
+.main-content{
+    flex-basis: 100%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-left: 180px !important;
+    background: $bg-gray-1;
+   
+}
