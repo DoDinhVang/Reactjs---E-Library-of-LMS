@@ -1,0 +1,29 @@
+// breadcrumb
+.breadcrumb {
+    align-items: center;
+
+    .breadcrumb-item {
+        &:nth-child(1) {
+            color: $color-black-1;
+            font-size: 1rem;
+        }
+
+        &:nth-child(2) {
+            color: $color-orange-3;
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 1rem;
+
+            &::before {
+                content: unset;
+            }
+        }
+
+        &:nth-child(3) {
+
+            &::before {
+                content: unset;
+            }
+        }
+    }
+}

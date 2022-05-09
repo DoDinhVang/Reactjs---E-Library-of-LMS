@@ -1,26 +1,23 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import HomeTemplate from './templates/homeTemplate/HomeTemplate';
-import './sass/base/reset.scss';
-import './sass/components/positionMainContent.scss';
-import './sass/components/navigation.scss';
-import './sass/components/title.scss';
-import './sass/components/header.scss';
-import './sass/components/button.scss';
-import '../src/sass/pages/home.scss';
-import './sass/pages/profile.scss';
-
 import { Router } from "react-router-dom";
 import Home from './pages/home/Home';
 import Profile from './pages/profile/Profile';
 import history from './util/history';
+import SubjectList from './pages/subject-management/subject-list/SubjectList'
+import SubjectDetail from './pages/subject-management/subject-list/SubjectDetail';
+import SubjectResources from './pages/subject-management/subject-list/SubjectResources';
 function App() {
   return (
     <div className="App">
       <Router history={history}>
         <HomeTemplate exact path='/' Component={Home}></HomeTemplate>
         <HomeTemplate exact path='/home' Component={Home}></HomeTemplate>
-        <HomeTemplate exact path='/subject-manager' Component={Home}></HomeTemplate>
+        <HomeTemplate exact path='/subject-list' Component={SubjectList}></HomeTemplate>
+        <HomeTemplate exact path='/subject-list/subject-detail/:id' Component={SubjectDetail}></HomeTemplate>
+        <HomeTemplate exact path = '/subject-resources/:id' Component = {SubjectResources}></HomeTemplate>
+        <HomeTemplate exact path='/subject-manager/:breadscrumb' Component={SubjectList}></HomeTemplate>
         <HomeTemplate exact path='/private-file' Component={Home}></HomeTemplate>
         <HomeTemplate exact path='/exam-bank' Component={Home}></HomeTemplate>
         <HomeTemplate exact path='/bell' Component={Home}></HomeTemplate>

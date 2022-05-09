@@ -14,8 +14,8 @@ export default function Home() {
             top: '50%',
             transform: 'translateY(-50%)'
           }}>
-            <p className='me-3'>Liên khóa</p>
-            <Select defaultValue="2021-2022" style={{ width: 120 }} onChange={() => {
+            <p className='me-3'>niên khóa</p>
+            <Select className='custom-select' defaultValue="2021-2022" style={{ width: 120 }} onChange={() => {
 
             }}>
               <Option value="2020-2021">2020-2021</Option>

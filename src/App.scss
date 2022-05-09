@@ -1,0 +1,17 @@
+@import '~antd/dist/antd.css';
+@import './sass/base/reset.scss';
+@import "./sass//base/customize/bootstrap5.scss";
+@import "./sass/base//customize/ant.scss";
+@import './sass/components/positionMainContent.scss';
+@import './sass/components/navigation.scss';
+@import './sass/components/title.scss';
+@import './sass/components/header.scss';
+@import './sass/components/button.scss';
+@import './sass/components//select.scss';
+@import './sass/components/inputSearch.scss';
+@import './sass/components/pagination.scss';
+@import '../src/sass/pages/home.scss';
+@import './sass/pages/profile.scss';
+@import './sass/pages/subjectList.scss';
+@import './sass/pages/subjectDetail.scss';
+@import './sass/pages/subjectResources.scss';

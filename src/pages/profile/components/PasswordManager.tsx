@@ -10,10 +10,10 @@ export default function PasswordManager() {
 
 return (
     <>
-        <h3 className='title px-5 py-3 mb-4'>Thay đổi mật khẩu</h3>
-        <div className='row m-0' style={{ minHeight: '200' }}>
-            <div className=' col-8 p-0'>
-                <form style={{ padding: '0 48px' }}>
+        <h3 className='title px-5 py-3 mb-0'>Thay đổi mật khẩu</h3>
+        <div className='row m-0 p-5' style={{ minHeight: '200' }}>
+            <div className=' col-8 '>
+                <form>
                     <div className='userId d-flex mb-3'>
                         <p className='mb-0 me-3 text-password' style={{ whiteSpace: 'nowrap', width: '30%' }}>Mật khẩu hiện tại:<span>*</span></p>
                         <Input.Password iconRender={iconRender} size='large' defaultValue={'123'} style={{ width: '70%' }} />
@@ -32,7 +32,7 @@ return (
                     </div>
                 </form>
             </div>
-            <div className=' col-4 p-0'>
+            <div className=' col-4 px-4'>
                 <div className='d-flex p-0'>
                     <span className='icon-note me-2'>i</span>
                     <div className='text-note'>

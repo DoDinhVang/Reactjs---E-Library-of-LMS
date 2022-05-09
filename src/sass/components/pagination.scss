@@ -1,0 +1,75 @@
+@import "../helper/variable.scss";
+
+.pagination {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 700;
+    list-style: none;
+    user-select: none;
+    .page-item {
+        min-width: 25px;
+        min-height: 25px;
+        display: flex;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        margin: 0 2px;
+        transition: all 0.3s;
+        font-size: 1rem;
+        font-weight: 500;
+        color: $color-black-0;
+
+        &:hover {
+            color: white;
+            background: $bg-orange-3;
+        }
+
+        &.active {
+            padding: 0;
+            color: white;
+            background: $bg-orange-3;
+        }
+
+        &.arrow-icon {
+            position: relative;
+            z-index: 1;
+
+            font-size: 35px;
+
+            transform: translateY(-2px);
+            transition: all 0.3s;
+
+            &:after {
+                content: "";
+                width: 25px;
+                height: 25px;
+                position: absolute;
+                z-index: -1;
+                top: 56%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            &.arrow-icon {
+                &:hover {
+                    color: $color-orange-3;
+                    background-color: transparent;
+                }
+
+            }
+        }
+
+        &.disabled {
+            cursor: not-allowed;
+            color: $color-gray-3;
+            opacity: 0.3;
+
+            &:hover {
+                background: transparent;
+            }
+        }
+    }
+}

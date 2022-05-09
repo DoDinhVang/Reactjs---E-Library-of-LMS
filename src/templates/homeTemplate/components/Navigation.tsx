@@ -26,7 +26,7 @@ export default function Navigation() {
                         </svg>
                     </NavLink></li>
                 <li className='nav-item'><NavLink to='/home' activeClassName='active' className='nav-link'><HomeOutlined className='nav-icon' /></NavLink></li>
-                <li className='nav-item'><NavLink to='/subject-manager' activeClassName='active' className='nav-link'><BookOutlined className='nav-icon' /></NavLink></li>
+                <li className='nav-item'><NavLink to='/subject-list' activeClassName='active' className='nav-link'><BookOutlined className='nav-icon' /></NavLink></li>
                 <li className='nav-item'><NavLink to='/private-file' activeClassName='active' className='nav-link'><FileSyncOutlined className='nav-icon' /></NavLink></li>
                 <li className='nav-item'><NavLink to='/exam-bank' activeClassName='active' className='nav-link'><ShoppingOutlined className='nav-icon' /></NavLink></li>
                 <li className='nav-item'><NavLink to='/bell' activeClassName='active' className='nav-link'><BellOutlined className='nav-icon' /></NavLink></li>

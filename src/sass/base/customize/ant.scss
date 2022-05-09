@@ -1,0 +1,26 @@
+@import "../../helper/variable.scss";
+#subject-resources .ant-tabs-tab {
+    font-size: 18px;
+    font-weight: 500;
+    color: $color-black-0;
+    // opacity: 0.5;
+
+    &:hover {
+        color: $color-orange-3;
+        opacity: 1;
+    }
+
+}
+
+#subject-resources .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: $color-orange-3;
+    
+}
+
+#subject-resources .ant-tabs-tab.ant-tabs-tab-active{
+    opacity: 1;
+}
+
+#subject-resources .ant-tabs-ink-bar {
+    background-color: $color-orange-3;
+}

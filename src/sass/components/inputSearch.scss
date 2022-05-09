@@ -1,0 +1,28 @@
+@import '../helper/variable.scss';
+.input-search-base{
+    position: relative;
+    height: 40px;
+    margin-top: 24px;
+    input{
+        width: 360px;
+        height: 100%;
+        outline: none;
+        border-radius: $br-16;
+        background: #F0F3F6;
+        padding-left: 2.5rem;
+        border: none;
+
+    }
+    .search-icon{
+        position: absolute;
+        top: 50%;
+        left: 12px;
+        transform: translateY(-50%);
+        color: $color-gray-2;
+        font-size: 18px;
+        &::placeholder{
+            color: $color-gray-2;
+            font-size: $fs-0_875;
+        }
+    }
+}
