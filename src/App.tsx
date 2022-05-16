@@ -8,6 +8,9 @@ import history from './util/history';
 import SubjectList from './pages/subject-management/subject-list/SubjectList'
 import SubjectDetail from './pages/subject-management/subject-list/SubjectDetail';
 import SubjectResources from './pages/subject-management/subject-list/SubjectResources';
+import SubjectMatetial from './pages/subject-management/subject-material/SubjectMatetial';
+import PrivateFile from './pages/private-file/PrivateFile';
+
 function App() {
   return (
     <div className="App">
@@ -15,10 +18,11 @@ function App() {
         <HomeTemplate exact path='/' Component={Home}></HomeTemplate>
         <HomeTemplate exact path='/home' Component={Home}></HomeTemplate>
         <HomeTemplate exact path='/subject-list' Component={SubjectList}></HomeTemplate>
+        <HomeTemplate exact path='/subject-material' Component={SubjectMatetial}></HomeTemplate>
         <HomeTemplate exact path='/subject-list/subject-detail/:id' Component={SubjectDetail}></HomeTemplate>
         <HomeTemplate exact path = '/subject-resources/:id' Component = {SubjectResources}></HomeTemplate>
         <HomeTemplate exact path='/subject-manager/:breadscrumb' Component={SubjectList}></HomeTemplate>
-        <HomeTemplate exact path='/private-file' Component={Home}></HomeTemplate>
+        <HomeTemplate exact path='/private-file' Component={PrivateFile}></HomeTemplate>
         <HomeTemplate exact path='/exam-bank' Component={Home}></HomeTemplate>
         <HomeTemplate exact path='/bell' Component={Home}></HomeTemplate>
         <HomeTemplate exact path='/settings' Component={Home}></HomeTemplate>

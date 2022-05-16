@@ -70,7 +70,7 @@ export default function SubjectDetail() {
                                     <p className='file-name mb-0'>HTKL_KT45P_1001.doc</p>
                                 </div>
                                 <div className='d-flex align-items-center btn-download py-1 px-2'>
-                                    <DownloadOutlined className='download' />
+                                    <DownloadOutlined className='download me-3' />
                                     <p className='mb-0'>tải về</p>
                                 </div>
                             </div>

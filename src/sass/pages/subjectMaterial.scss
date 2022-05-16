@@ -1,0 +1,51 @@
+@import "../helper/variable.scss";
+@import "../helper/mixin.scss";
+@import '../helper/variable.scss';
+
+#subject-material {
+    
+    .subject-material-content {
+        background: $color-white-base-0;
+        box-shadow: 4px 4px 25px 4px rgba(154, 202, 245, 0.25);
+        border-radius: $br-16;
+    }
+    .data-per-page{
+        input{
+            border:  1px solid $color-orange-3;
+            width: 50px;
+            outline: none;
+    
+        }
+    }
+
+    .table-content {
+        width: 100%;
+        th,td{
+            height: 64px;
+            padding: 1rem;
+            color: $color-black-0;
+        }
+        th{
+            font-weight: 500;
+            color: white;
+        }
+        tbody tr{
+            border: 1px solid $color-gray-1;
+            &:nth-child(2n){
+                background-color: $white-1;
+            }
+        }
+
+        thead {
+            tr {
+                background: linear-gradient(270deg, #FF5400 0%, #F17F21 80.56%);
+                border-radius: 8px 8px 0px 0px;
+            }
+            
+        }
+        .anticon.anticon-eye{
+            color: $color-orange-3;
+            font-size: 1.5rem;
+        }
+    }
+}

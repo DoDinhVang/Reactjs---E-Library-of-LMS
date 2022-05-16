@@ -24,3 +24,14 @@
 #subject-resources .ant-tabs-ink-bar {
     background-color: $color-orange-3;
 }
+
+// custom Modal
+.ant-modal-header{
+    text-align: center;
+    border-bottom: none;
+    color: $color-black-0;
+    font-size: 28px;
+}
+.ant-modal-footer{
+   display: none;
+}

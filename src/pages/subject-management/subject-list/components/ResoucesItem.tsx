@@ -1,10 +1,10 @@
 import React from 'react'
-import { RightOutlined, FileOutlined } from '@ant-design/icons'
-import {useState} from "react"
+import { RightOutlined, FileOutlined, DownloadOutlined } from '@ant-design/icons'
+import { useState } from "react"
 
 export default function ResoucesItem() {
     const [isOpen, setIsOpen] = useState<boolean>(false);
-    const trunCaseText = (text: string) =>{
+    const trunCaseText = (text: string) => {
         if (text.length > 30) {
             return text.substring(0, 30) + "..."
         }
@@ -15,17 +15,17 @@ export default function ResoucesItem() {
             {!isOpen ?
                 <div className="d-flex align-items-center item-close ps-2 pe-1 mb-3">
                     <h4>{trunCaseText("Bài 1 : giới thiệu về thương mại điện tử")}</h4>
-                    <RightOutlined className='arrow-icon'  onClick={()=>{
+                    <RightOutlined className='arrow-icon' onClick={() => {
                         setIsOpen(isOpen => !isOpen);
-                    }}/>
+                    }} />
                     <p>1/2 <span>|</span> <span>45 phút</span></p>
                 </div> :
                 <div className="ps-3 pe-1 py-1 item-open mb-3">
                     <div className='d-flex align-items-center item-open-tittle'>
                         <h4>{trunCaseText("Bài 1 : giới thiệu về thương mại điện tử")}</h4>
-                        <RightOutlined className='arrow-icon'  onClick={()=>{
-                        setIsOpen(isOpen => !isOpen);
-                    }} />
+                        <RightOutlined className='arrow-icon' onClick={() => {
+                            setIsOpen(isOpen => !isOpen);
+                        }} />
                         <p>1/2 <span>|</span> <span>45 phút</span></p>
                         <hr></hr>
                     </div>
@@ -36,11 +36,14 @@ export default function ResoucesItem() {
                         <h4 className='col-8'> 1: Giới thiệu về thương mai điện tử trong những năm gần đây</h4>
                     </div>
                     <div className='d-flex align-items-center item-open-content py-2 px-3'>
-
                         <div className='file-icon col-4 me-3'>
                             <FileOutlined />
                         </div>
                         <h4 className='col-8'> 1: Giới thiệu về thương mai điện tử trong những năm gần đây</h4>
+                    </div>
+                    <div className="d-flex my-3 align-items-center btn-download py-1 px-2 " style = {{marginLeft: "74%"}}>
+                        <DownloadOutlined className='download me-2' />
+                        <span>tải về</span>
                     </div>
                     <div className="lineheight"></div>
 

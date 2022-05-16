@@ -1,29 +1,25 @@
+@import "../../helper/variable.scss";
+
 // breadcrumb
+
 .breadcrumb {
     align-items: center;
-
-    .breadcrumb-item {
-        &:nth-child(1) {
-            color: $color-black-1;
-            font-size: 1rem;
+    .breadcrumb-item{
+        color: $color-black-1;
+        font-size: 1rem;
+        &::before {
+            content: unset;
         }
-
-        &:nth-child(2) {
+        & .icon-arrow {
             color: $color-orange-3;
             font-size: 1rem;
             font-weight: 700;
             line-height: 1rem;
-
-            &::before {
-                content: unset;
-            }
         }
-
-        &:nth-child(3) {
-
-            &::before {
-                content: unset;
-            }
+        &:last-child{
+            color: $color-black-0;
+            font-size: 1.8rem;
+            font-weight: bold; 
         }
     }
 }

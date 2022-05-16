@@ -20,7 +20,7 @@ export default function SubjectList() {
 
         <div id='subject-list' className='main-content px-5'>
             <ol className='breadcrumb'>
-                <li className='breadcrumb-item'>Quản lý học viện</li>
+                <li className='breadcrumb-item'>Quản lý môn học</li>
                 <li className='breadcrumb-item px-4'> <RightOutlined /> </li>
                 <li className='breadcrumb-item ps-0 title_base'>Danh sách môn học</li>
             </ol>

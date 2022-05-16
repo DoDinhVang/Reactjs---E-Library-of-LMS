@@ -2,9 +2,11 @@ import { createStore, applyMiddleware, combineReducers } from 'redux';
 import createSagaMiddleware from 'redux-saga';
 import rootSaga from './saga/rootSaga';
 import profileReducer from './reducer/profileReducer';
+import ModalReducer from './reducer/ModalReducer';
 const sagaMiddleware = createSagaMiddleware();
 const rootReducers = combineReducers({
-  profileReducer
+  profileReducer,
+  ModalReducer
 
 })
 

@@ -49,7 +49,7 @@ export default function Navigation() {
                         </NavLink>
                         <ul className='submenu list-unstyled'>
                             <li className='nav-item'><NavLink to='/subject-list' className='nav-link'>Danh Sách môn học</NavLink></li>
-                            <li className='nav-item'><NavLink to='/document' className='nav-link'>Phê duyệt tài liệu môn học</NavLink></li>
+                            <li className='nav-item'><NavLink to='/subject-material' className='nav-link'>Phê duyệt tài liệu môn học</NavLink></li>
                         </ul>
                     </li>
                     <li className='nav-item'>

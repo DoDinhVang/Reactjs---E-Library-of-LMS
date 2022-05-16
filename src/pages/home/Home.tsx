@@ -2,6 +2,7 @@ import React from 'react'
 import { Select } from 'antd'
 import CarouselSimple from './components/CarouselSimple'
 import CarouselMulti from './components/CarouselMulti'
+import history from '../../util/history'
 
 const { Option } = Select
 export default function Home() {
@@ -26,7 +27,9 @@ export default function Home() {
           </div>
         </div>
         <div className='col '>
-          <div className='col-container col-container1'>
+          <div className='col-container col-container1' onClick={()=>{
+            history.push('/subject-list')
+          }}>
             <p>12</p>
             <p>Môn học</p>
           </div>
@@ -39,7 +42,9 @@ export default function Home() {
 
         </div>
         <div className='col '>
-          <div className='col-container col-container3'>
+          <div className='col-container col-container3' onClick={()=>{
+            history.push("/private-file");
+          }}>
             <p>12</p>
             <p>Tệp riêng tư</p>
           </div>
